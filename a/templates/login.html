@@ -4,12 +4,12 @@
     <h1 class="login-title">Sign In</h1>
     <p class="login-subtitle">Don't have an account? <a href="{{ url_for('web.register') }}">Register</a></p>
 
-    <form class="login-form" action="{{ url_for('auth.login') }}" method="post">
+    <form class="login-form" method="post" action="{{ url_for('web.login') }}" method="post">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="sample@example.com" required>
+        <input type="email" id="email" name="email" placeholder="sample@example.com">
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="SamplePassword123" required>
+        <input type="password" id="password" name="password" placeholder="SamplePassword123">
 
         <button type="submit" class="signin-btn">Sign In</button>
     </form>

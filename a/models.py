@@ -12,9 +12,9 @@ class User(UserMixin, db.Model):
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)  # 邮箱唯一且必填
     password_hash = db.Column(db.String(256), nullable=False)  # 加密密码
-    role = db.Column(db.String, default="reader")  # 生日可选（允许为空）
+    role = db.Column(db.String, default="reader") 
     created_at = db.Column(db.DateTime, default=datetime.utcnow)  # 注册时间（自动填充）
-
+    dob = db.Column(db.DateTime, nullable=False)
     # 密码加密方法
     def set_password(self, password):
         if not password:  # 防止空密码

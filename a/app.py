@@ -28,6 +28,7 @@ def create_app():
     # create tables if not exists
     with app.app_context():
         db.create_all()
+        print("Database tables created successfully") 
 
     return app
 
