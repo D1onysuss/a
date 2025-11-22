@@ -4,18 +4,25 @@
     <h1 class="register-title">Create New Account</h1>
     <p class="register-subtitle">Already Registered? <a href="{{ url_for('web.login') }}">Login</a></p>
 
-    <form class="register-form">
+    <!-- 1. 添加表单提交方法（POST）和提交地址 -->
+    <form class="register-form" method="post" action="{{ url_for('web.register') }}">
+        <!-- 2. 添加错误提示区域 -->
+        {% if error %}
+        <p style="color: red; margin: 10px 0; text-align: center;">{{ error }}</p>
+        {% endif %}
+
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name">
+        <!-- 3. 添加name属性，并设置value保留输入（邮箱重复时） -->
+        <input type="text" id="name" name="name" placeholder="Name" value="{{ name if name else '' }}">
 
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="sample@example.com">
+        <input type="email" id="email" name="email" placeholder="sample@example.com" value="{{ email if email else '' }}">
 
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="SamplePassword123">
+        <input type="password" id="password" name="password" placeholder="SamplePassword123">
 
         <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" value="2000-01-01">
+        <input type="date" id="dob" name="dob" value="{{ dob if dob else '2000-01-01' }}">
 
         <button type="submit" class="signup-btn">Sign Up</button>
     </form>
