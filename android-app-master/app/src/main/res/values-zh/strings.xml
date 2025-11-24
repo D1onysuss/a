@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">学习工具</string>
+    <string name="select_language">选择语言</string>
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+    <string name="select_subjects">选择学习的学科</string>
+    <string name="select_subjects_desc">可选择1个学科</string>
+    <string name="no_subjects_selected">未选择任何学科</string>
+    <string name="selected_subjects">已选择：</string>
+    <string name="input_hint">输入你的问题...</string>
+    <string name="send">发送</string>
+    <string name="please_select_subject">请先选择学科</string>
+    <string name="please_enter_message">请输入消息内容</string>
+    <string name="back">返回</string>
+    <string name="error">"AI回复错误："</string>>
+    <string name="fail">发送失败：</string>>
+
+    <!-- 学科名称 -->
+    <string name="chinese_subject">语文</string>
+    <string name="math_subject">数学</string>
+    <string name="english_subject">英语</string>
+    <string name="history_subject">历史</string>
+    <string name="geography_subject">地理</string>
+    <string name="politics_subject">政治</string>
+    <string name="physics_subject">物理</string>
+    <string name="chemistry_subject">化学</string>
+    <string name="biology_subject">生物</string>
+
+    <string name="learning_subjects_1">我现在需要学习的学科是：</string>
+    <string name="learning_subjects_2">。请基于这些学科的知识背景与我交流，解答相关问题。记住请用中文回答。</string>
+    <string name="punctuation1">、</string>
+</resources>

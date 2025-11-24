@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Study Tool</string>
+    <string name="select_language">Select Language</string>
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <string name="select_subjects">Select Subjects</string>
+    <string name="select_subjects_desc">You can select one subjects</string>
+    <string name="no_subjects_selected">No subjects selected</string>
+    <string name="selected_subjects">Selected: </string>
+    <string name="input_hint">Enter your question...</string>
+    <string name="send">Send</string>
+    <string name="please_select_subject">Please select subjects first</string>
+    <string name="please_enter_message">Please enter your message</string>
+    <string name="back">Back</string>>
+    <string name="error">"AI response error: "</string>
+    <string name="fail">Send failed: </string>
+
+
+    <!-- 学科名称 -->
+    <string name="chinese_subject">Chinese</string>
+    <string name="math_subject">Mathematics</string>
+    <string name="english_subject">English</string>
+    <string name="history_subject">History</string>
+    <string name="geography_subject">Geography</string>
+    <string name="politics_subject">Politics</string>
+    <string name="physics_subject">Physics</string>
+    <string name="chemistry_subject">Chemistry</string>
+    <string name="biology_subject">Biology</string>
+
+    <string name="learning_subjects_1">I need to study these subjects:</string>
+    <string name="learning_subjects_2">. Please communicate with me based on the knowledge background of these subjects and answer related questions. Remember please answer by English.</string>
+    <string name="punctuation1">, </string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 标题和模式说明 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_subjects"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_subjects_desc"
+        android:textSize="14sp"
+        android:textColor="@color/gray_500"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 学科网格 -->
+    <GridView
+        android:id="@+id/subjectGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:horizontalSpacing="12dp"
+        android:verticalSpacing="12dp"
+        android:stretchMode="columnWidth"/>
+
+    <!-- 已选学科提示（底部显示） -->
+    <TextView
+        android:id="@+id/selectedTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_subjects_selected"
+        android:textSize="14sp"
+        android:textColor="@color/gray_600"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
